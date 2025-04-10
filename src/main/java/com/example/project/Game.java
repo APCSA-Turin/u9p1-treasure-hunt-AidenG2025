@@ -66,7 +66,7 @@ public class Game{
                 {
                     grid.display();
                     grid.gameover();
-                    return;
+                    
                 }
     
                 
@@ -76,7 +76,7 @@ public class Game{
                     grid.placeSprite(player, move);
                     grid.display();
                     grid.win();
-                    return;
+                   
                 }
     
                

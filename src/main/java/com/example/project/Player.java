@@ -32,10 +32,22 @@ public class Player extends Sprite
         int newX = getX(); 
         int newY = getY(); 
 
-        if (direction.equals("w")) newY++;   
-        if (direction.equals("s")) newY--;   
-        if (direction.equals("a")) newX--;   
-        if (direction.equals("d")) newX++;   
+        if (direction.equals("w")) 
+        {
+            newY++;   
+        }
+        if (direction.equals("s")) 
+        {
+            newY--;   
+        }
+        if (direction.equals("a")) 
+        {
+            newX--;   
+        }
+        if (direction.equals("d")) 
+        {
+            newX++;   
+        }
 
         setX(newX); 
         setY(newY); 
@@ -62,10 +74,22 @@ public class Player extends Sprite
         int newX = getX();
         int newY = getY();
 
-        if (direction.equals("w") && newY < size - 1) return true;
-        if (direction.equals("s") && newY > 0) return true;
-        if (direction.equals("a") && newX > 0) return true;
-        if (direction.equals("d") && newX < size - 1) return true;
+        if (direction.equals("w") && newY < size - 1) 
+        {
+            return true;
+        }
+        if (direction.equals("s") && newY > 0) 
+        {
+            return true;
+        }
+        if (direction.equals("a") && newX > 0) 
+        {
+            return true;
+        }
+        if (direction.equals("d") && newX < size - 1) 
+        {
+            return true;
+        }
         return false;
     }
     public String getRowCol (int size)
